@@ -80,7 +80,7 @@ lon=-12.3456789
 
 运行，看配置文件是否满足你的需求
 {% highlight shell %}
-$ redfish
+$ redshift
 {% endhighlight %}
 
 加入自启动
