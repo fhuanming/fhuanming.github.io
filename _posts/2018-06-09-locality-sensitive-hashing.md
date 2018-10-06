@@ -1,10 +1,12 @@
 ---
 title: Simhash and MinHash
 date: 2018-06-09 22:00:00
-tags: locality-sensitive-hashing Simhash MinHash
+tags: locality-sensitive-hashing Simhash MinHash hash
 ---
 
 最近学习了两种LSH (Locality-sensitive Hashing) 的算法: SimHash和MinHash. 在这里总结一下。
+
+<!-- more -->
 
 # SimHash
 
