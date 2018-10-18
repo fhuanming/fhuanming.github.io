@@ -70,7 +70,9 @@ ALLOWED_HOSTS = [
 ]
 ```
 
-# Config Apache
+# Apache Config
+
+## If you want to config the mod_wsgi as embedded mode  
 
 Go to Apache config. For Ubuntu the file path is `/etc/apache2/apache2.conf`. For other systems, please check [Apache website](https://wiki.apache.org/httpd/DistrosDefaultLayout#Apache_httpd_2.4_default_layout_.28apache.org_source_package.29). Add following config into the file:
 
@@ -84,6 +86,42 @@ WSGIPythonPath /home/yourusername/mysite
 Require all granted
 </Files>
 </Directory>
+```
+
+## If you want to config the mod_wsgi as deamon mode
+
+Add a new Apache VirtualHost config file (you can also modify the exsiting default file). For Ubuntu the file path is under `/etc/apache2/sites-available`. For other systems, please check [Apache website](https://wiki.apache.org/httpd/DistrosDefaultLayout#Apache_httpd_2.4_default_layout_.28apache.org_source_package.29):
+
+{% highlight shell %}
+$ sudo vim /etc/apache2/sites-available/mysite.conf
+{% endhighlight %}
+
+Then you can add following config into the file:
+
+```config
+<VirtualHost *:80>
+  WSGIDaemonProcess mysite processes=2 threads=15 display-name=%{GROUP} python-home=/home/fhuanming/.virtualenv/mysite python-path=/home/fhuanming/mysite
+
+  WSGIProcessGroup mysite
+  WSGIApplicationGroup %{GLOBAL}
+  
+  WSGIScriptAlias / /home/fhuanming/mysite/mysite/wsgi.py
+
+  <Directory /home/fhuanming/mysite/mysite>
+    <Files wsgi.py>
+      Require all granted
+    </Files>
+  </Directory>
+</VirtualHost>
+```
+
+Then disable the default VirtualHost config and enable your new added.
+
+```shell
+sudo a2dissite 000-default.conf
+sudo systemctl reload apache2
+sudo a2ensite mysite
+sudo systemctl reload apache2
 ```
 
 # Check your website
