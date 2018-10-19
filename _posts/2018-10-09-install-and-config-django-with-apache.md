@@ -117,11 +117,11 @@ Then you can add following config into the file:
 
 Then disable the default VirtualHost config and enable your new added.
 
-```shell
-sudo a2dissite 000-default.conf
-sudo systemctl reload apache2
-sudo a2ensite mysite
-sudo systemctl reload apache2
+```ShellSession
+$ sudo a2dissite 000-default.conf
+$ sudo systemctl reload apache2
+$ sudo a2ensite mysite
+$ sudo systemctl reload apache2
 ```
 
 # Check your website
