@@ -10,57 +10,57 @@ tags: Django Apache mod_wsgi wsgi Ubuntu python virtualenv
 
 # Install pip
 
-{% highlight shell %}
-$ sudo apt-get install python3-pip.
-{% endhighlight %}
+```console
+sudo apt-get install python3-pip.
+```
 
 # Install virtualenv
 
-{% highlight shell %}
-$ pip3 install virtualenv
-$ virtualenv ./.virtualenv/mysite -p python3
-$ source .virtualenv/mysite/bin/activate
-{% endhighlight %}
+```console
+pip3 install virtualenv
+virtualenv ./.virtualenv/mysite -p python3
+source .virtualenv/mysite/bin/activate
+```
 
 To exit the virtual env:
 
-{% highlight shell %}
-$ deactivate
-{% endhighlight %}
+```console
+deactivate
+```
 
 # Install Apache
 
-{% highlight shell %}
-$ sudo apt-get install apache2
-{% endhighlight %}
+```console
+sudo apt-get install apache2
+```
 
 Some useful comments to restart apache service:
 
-{% highlight shell %}
-$ apachectl stop
-$ apachectl start
-$ apachectl restart
-{% endhighlight %}
+```console
+apachectl stop
+apachectl start
+apachectl restart
+```
 
 # Install mod_wsgi
 
-{% highlight shell %}
-$ sudo apt-get install libapache2-mod-wsgi-py3
-{% endhighlight %}
+```console
+sudo apt-get install libapache2-mod-wsgi-py3
+```
 
 # Install Django
 
 Under the virtual env:
-{% highlight shell %}
-$ pip install Django
-$ python -m django --version
-{% endhighlight %}
+```console
+pip install Django
+python -m django --version
+```
 
 # Create your first Django project and config it
 
-{% highlight shell %}
-$ django-admin startproject mysite
-{% endhighlight %}
+```console
+django-admin startproject mysite
+```
 
 Go to `mysite/settings.py`. Add your host ip to `ALLOWED_HOSTS`:
 
@@ -92,9 +92,9 @@ Require all granted
 
 Add a new Apache VirtualHost config file (you can also modify the exsiting default file). For Ubuntu the file path is under `/etc/apache2/sites-available`. For other systems, please check [Apache website](https://wiki.apache.org/httpd/DistrosDefaultLayout#Apache_httpd_2.4_default_layout_.28apache.org_source_package.29):
 
-{% highlight shell %}
-$ sudo vim /etc/apache2/sites-available/mysite.conf
-{% endhighlight %}
+```console
+sudo vim /etc/apache2/sites-available/mysite.conf
+```
 
 Then you can add following config into the file:
 
@@ -117,11 +117,11 @@ Then you can add following config into the file:
 
 Then disable the default VirtualHost config and enable your new added.
 
-```ShellSession
-$ sudo a2dissite 000-default.conf
-$ sudo systemctl reload apache2
-$ sudo a2ensite mysite
-$ sudo systemctl reload apache2
+```console
+sudo a2dissite 000-default.conf
+sudo systemctl reload apache2
+sudo a2ensite mysite
+sudo systemctl reload apache2
 ```
 
 # Check your website
