@@ -4,7 +4,7 @@ date: 2018-11-01 20:30:00
 tags: Django MySQL Ubuntu
 ---
 
-[上一篇文章](../../../../2018/03/06/install-and-config-django-with-apache/)介绍了如何Django和Apache的安装与配置．这篇文章将介绍如何连接Django和MySQL.
+[上一篇文章](../../../../2018/10/09/install-and-config-django-with-apache/)介绍了如何安装与配置Django和Apache. 这篇文章将介绍如何连接Django和MySQL.
 
 <!-- more -->
 

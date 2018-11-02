@@ -4,7 +4,7 @@ date: 2018-10-09 20:30:00
 tags: Django Apache mod_wsgi wsgi Ubuntu python virtualenv
 ---
 
-这篇文章要介绍在Ubuntu上面如何从零开始配置Django和Apache. 要说明的一点是我这里使用的是python3.
+这篇文章要介绍在Ubuntu上面如何从零开始配置Django和Apache. 要说明的一点是我这里使用的是python3. [下一篇文章](../../../../2018/11/01/connect-django-with-mysql/)将介绍如何连接Django和MySQL.
 
 <!-- more -->
 
