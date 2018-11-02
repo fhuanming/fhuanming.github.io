@@ -47,4 +47,5 @@ tags: locality-sensitive-hashing Simhash MinHash hash
 如果是最naive的方法挨个比较的话，复杂度为$$O(n*m)$$. $$n$$为数据个数，$$m$$为指纹长度。这里可视为$$n=2^{64}, m=64$$. 在采取的上面的方法后，复杂度降为$$O(4* log(2^{m/4}) * n^{\frac{3}{4}} * \frac{3}{4} * m ) = O(n^{\frac{3}{4}} * m^2)$$
 
 # MinHash
+
 TODO:Doc it.

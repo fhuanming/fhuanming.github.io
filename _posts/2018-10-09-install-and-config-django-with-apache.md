@@ -51,6 +51,7 @@ sudo apt-get install libapache2-mod-wsgi-py3
 # Install Django
 
 Under the virtual env:
+
 ```console
 pip install Django
 python -m django --version
