@@ -1,10 +1,10 @@
 ---
 title: The Login of Root User on MySql
 date: 2018-11-12 21:00:00
-tags: Mysql Ubuntu root localhost plugin auth_socket authentication_string
+tags: MySQL Ubuntu root localhost plugin auth_socket authentication_string
 ---
 
-最近发现使用`mysql -u root -p`登录MySql的时候会遇到`ERROR 1698 (28000): Access denied for user 'root'@'localhost'`错误。 但是`UPDATE user SET Password=PASSWORD('my_password') where USER='root';`并不能解决我的问题。经过一番调查发现是我`plugin`的设置的问题。
+最近发现使用`mysql -u root -p`登录MySQL的时候会遇到`ERROR 1698 (28000): Access denied for user 'root'@'localhost'`错误。 但是`UPDATE user SET Password=PASSWORD('my_password') where USER='root';`并不能解决我的问题。经过一番调查发现是我`plugin`的设置的问题。
 
 <!-- more -->
 
