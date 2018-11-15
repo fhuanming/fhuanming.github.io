@@ -63,12 +63,18 @@ python -m django --version
 django-admin startproject mysite
 ```
 
-Go to `mysite/settings.py`. Add your host ip to `ALLOWED_HOSTS`:
+Go to `mysite/settings.py`. Add your host ip to `ALLOWED_HOSTS` and add `STATIC_ROOT`:
 
 ```python
 ALLOWED_HOSTS = [
     '35.232.xxx.xxx'
 ]
+
+# ...
+# some other configs
+# ...
+
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 ```
 
 # Apache Config
@@ -82,10 +88,24 @@ WSGIScriptAlias / /home/yourusername/mysite/mysite/wsgi.py
 WSGIPythonHome /home/yourusername/.virtualenv/mysite
 WSGIPythonPath /home/yourusername/mysite
 
+Alias /robots.txt /home/fhuanming/mysite/static/robots.txt
+Alias /favicon.ico /home/fhuanming/mysite/static/favicon.ico
+
+Alias /media/ /home/fhuanming/mysite/media/
+Alias /static/ /home/fhuanming/mysite/static/
+
+<Directory /home/fhuanming/mysite/static/>
+  Require all granted
+</Directory>
+
+<Directory /home/fhuanming/mysite/media>
+  Require all granted
+</Directory>
+
 <Directory /home/yourusername/mysite/mysite>
-<Files wsgi.py>
-Require all granted
-</Files>
+  <Files wsgi.py>
+    Require all granted
+  </Files>
 </Directory>
 ```
 
@@ -102,6 +122,20 @@ Then you can add following config into the file:
 ```config
 <VirtualHost *:80>
   WSGIDaemonProcess mysite processes=2 threads=15 display-name=%{GROUP} python-home=/home/fhuanming/.virtualenv/mysite python-path=/home/fhuanming/mysite
+
+  Alias /robots.txt /home/fhuanming/mysite/static/robots.txt
+  Alias /favicon.ico /home/fhuanming/mysite/static/favicon.ico
+
+  Alias /media/ /home/fhuanming/mysite/media/
+  Alias /static/ /home/fhuanming/mysite/static/
+
+  <Directory /home/fhuanming/mysite/static/>
+    Require all granted
+  </Directory>
+
+  <Directory /home/fhuanming/mysite/media>
+    Require all granted
+  </Directory>
 
   WSGIProcessGroup mysite
   WSGIApplicationGroup %{GLOBAL}
@@ -128,3 +162,11 @@ sudo systemctl reload apache2
 # Check your website
 
 Then go to your browser to visit `http://35.232.xxx.xxx:80`. You will find your config works. :D
+
+# Check you admin page
+
+If you went you `http://35.232.xxx.xxx:80/admin` and find out that your admin page does not serve css file. Please run cmd below. This cmd will copy all your admin static files to the `STATIC_ROOT` directory which you configured [above](#create-your-first-Django-project-and-config-it).
+
+```console
+python manage.py collectstatic
+```
