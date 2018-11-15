@@ -1,5 +1,5 @@
 ---
-title: The Login of Root User on MySql
+title: The Login of Root User on MySQL
 date: 2018-11-12 21:00:00
 tags: MySQL Ubuntu root localhost plugin auth_socket authentication_string
 ---
@@ -8,7 +8,7 @@ tags: MySQL Ubuntu root localhost plugin auth_socket authentication_string
 
 <!-- more -->
 
-首先使用`sudo mysql -u root`登录MySql. 然后运行
+首先使用`sudo mysql -u root`登录MySQL. 然后运行
 
 ```console
 mysql> select user, Host, plugin, authentication_string from mysql.user where user="root";
@@ -19,7 +19,7 @@ mysql> select user, Host, plugin, authentication_string from mysql.user where us
 +------+-----------+-------------+-----------------------+
 ```
 
-你可以发现`plugin`显示的是`auth_socket`，而且`authentication_string`是空值。这是因为我在安装MySql的时候没有设置root. 导致了MySql可以以root和空密码的形式登录。而当我运行`UPDATE user SET Password=PASSWORD('my_password') where USER='root';`的时候，由于`plugin`是`auth_socket`，所以这条命令并没有起作用。
+你可以发现`plugin`显示的是`auth_socket`，而且`authentication_string`是空值。这是因为我在安装MySQL的时候没有设置root. 导致了MySQL可以以root和空密码的形式登录。而当我运行`UPDATE user SET Password=PASSWORD('my_password') where USER='root';`的时候，由于`plugin`是`auth_socket`，所以这条命令并没有起作用。
 
 我们可以来看看普通的user这几项的值是什么
 
