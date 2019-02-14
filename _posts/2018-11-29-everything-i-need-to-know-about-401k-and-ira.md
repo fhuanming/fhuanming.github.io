@@ -2,6 +2,7 @@
 title: Everthing I need to know About 401(k) and IRA
 date: 2018-11-29 20:30:00
 tags: 401k IRA
+mathjax: false
 ---
 
 This is a document to help me understand how 401(k) and IRA work. Last updated on 2019/02.
@@ -18,7 +19,7 @@ This is a document to help me understand how 401(k) and IRA work. Last updated o
 | Contribution Taxed upon withdrawal? | Yes | No | No |
 | Earning taxed upon withdrawal? | Yes | No (for qualified withdrawals)* | Yes |
 | Can you convert to Roth later? | Yes | No | Yes |
-| Contribution Limits (2019) | &#36;19000(<50), &#36;25000(>50)** | &#36;19000(<50), &#36;25000(>50)** | &#36;27500 |
+| Contribution Limits (2019) | $19000(<50), $25000(>50)** | $19000(<50), $25000(>50)** | $27500 |
 
 *A distribution or withdrawal of Roth 401(k) is usually taxable unless the inital contribution was made more than 5 years ago and you're at least 59.5. Early withdrawels maybe subject to 10% federal penalty tax.
 
@@ -30,8 +31,8 @@ This is a document to help me understand how 401(k) and IRA work. Last updated o
 
 |  | Traditional IRA | Roth IRA |
 |---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Income Limits | No | Phase-out starts at &#36;122000, ineligible at &#36;137000 if single. Phase-out starts at &#36;193000, ineligible at &#36;203000 if married. |
-| Contribution Limits(2019) | &#36;6000(<50),&#36;7000(>50)* | &#36;6000(<50),&#36;7000(>50)* |
+| Income Limits | No | Phase-out starts at $122000, ineligible at $137000 if single. Phase-out starts at $193000, ineligible at $203000 if married. |
+| Contribution Limits(2019) | $6000(<50), $7000(>50)* | $6000(<50),$7000(>50)* |
 | Tax Deduction | No deduction if your income is above certain amount.** | No |
 | Withdrawal | Withdrawals are penalty free beginning at age 59.5. | Contributions can be withdrawn at any time, tax-free and penalty free. Five years after your first contribution and age 59.5, earnings withdrawals are tax-free, too. |
 
@@ -44,6 +45,15 @@ Contribution Dealine: 04/18/Y for Year Y-1
 
 ## Pro-rata Rule
 
-Calculate how much money in your Traditional IRA accounts is pre-tax and how much is after tax. Treat all of your IRAs like one big IRA for this purpose. Say you have a total of &#36;100,000 in all of your accounts, and &#36;10,000 of it is money you put in after taxes. You will owe taxes on 90% of the money you convert to a Roth.
+### What is this
+
+The pro-rata rule is the formula used to determine how much of a distribution is taxable when the account owner holds both after-tax and pre-tax dollars in their Traditional IRA(s).
+
+Calculate how much money in your Traditional IRA(s) accounts is pre-tax and how much is after tax. Treat all of your IRAs like one big IRA for this purpose. Say you have a total of $100,000 in all of your accounts, and $10,000 of it is money you put in after taxes. You will owe taxes on 90% of the money you convert to a Roth.
+
+### How to avoid it
+
+You can roll the pre-tax amounts from your Traditional IRA(s) to 401k. And then roll the after tax amounts from your Traditional IRA(s) to Roth IRA.
+
 
 [comment]: <> (Todo: Doc: Backdoors and Rollover)
