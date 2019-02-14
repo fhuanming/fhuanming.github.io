@@ -53,7 +53,29 @@ Calculate how much money in your Traditional IRA(s) accounts is pre-tax and how 
 
 ### How to avoid it
 
-You can roll the pre-tax amounts from your Traditional IRA(s) to 401k. And then roll the after tax amounts from your Traditional IRA(s) to Roth IRA.
+You can roll the pre-tax amounts from your Traditional IRA(s) to 401(k). And then roll the after tax amounts from your Traditional IRA(s) to Roth IRA.
 
+# Backdoors and Rollover
 
-[comment]: <> (Todo: Doc: Backdoors and Rollover)
+## Backdoor Roth IRA
+
+In a short: Convert from Traditional IRA to Roth IRA.
+
+1. Ensure you don't have any amount of pre-tax IRA(s).
+
+    This is to avoid Pro-rata rule.
+
+1. Make a non-deductable IRA contribution.
+
+    This is as known as after-tax traditional IRA.
+
+1. Convert the money from traditional IRA to Roth IRA.
+
+## MEGA Backdoor Roth IRA
+
+In a short: Convert from after-tax 401(k) to Roth IRA
+
+1. Contribute to your after-tax 401(k).
+1. Convert that money to the Roth IRA.
+
+    Ideally, you can convert the money to Roth IRA as soon as you cotribute the money to the after-tax 401(k). In this way, you don't need to pay the earning tax because this is no earning yet (in your after-tax 401(k) account).
