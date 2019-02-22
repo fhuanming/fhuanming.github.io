@@ -73,9 +73,9 @@ In a short: Convert from Traditional IRA to Roth IRA.
 
 ## MEGA Backdoor Roth IRA
 
-In a short: Convert from after-tax 401(k) to Roth IRA
+MEGA back door has two flavors: Convert from after-tax 401(k) to Roth 401(k) or Roth IRA.
 
-1. Contribute to your after-tax 401(k).
-1. Convert that money to the Roth IRA.
+1. Contribute to your money after-tax 401(k).
+1. Convert that money to the Roth 401(k) or Roth IRA.
 
-    Ideally, you can convert the money to Roth IRA as soon as you cotribute the money to the after-tax 401(k). In this way, you don't need to pay the earning tax because this is no earning yet (in your after-tax 401(k) account).
+    Ideally, you will convert the money to Roth 401(k) or Roth IRA as soon as you cotribute the money to the after-tax 401(k). In this way, you don't need to pay the earning tax because this is no earning yet (in your after-tax 401(k) account).
