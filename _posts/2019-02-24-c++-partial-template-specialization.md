@@ -20,6 +20,8 @@ struct GetNext<Curr, N, Rest...> {
 
 由于对C++ Template Metaprogramming 不是很熟悉， 觉得在用GetNext的时候，两个申明都可能会匹配上，那么compiler怎么知道选择哪个呢。
 
+<!-- more -->
+
 经过一番查找，我才是道这是Partial Template Specialization（偏特化）。举个例子
 
 ```c++
