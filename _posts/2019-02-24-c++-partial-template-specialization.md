@@ -1,7 +1,7 @@
 ---
 title: C++ Partial Template Specialization
 date: 2019-02-24 15:00:00
-tags: c++ partial_template_specialization template_metaprogramming
+tags: C++ partial_template_specialization template_metaprogramming
 ---
 
 最近读到一段代码，大致如下：
