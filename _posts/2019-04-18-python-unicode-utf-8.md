@@ -39,7 +39,7 @@ print(ua)
 保存完后，看一下文件的编码方式：
 
 ```shell
-‘file -I ./unicode_test.py’，
+$ file -I ./unicode_test.py
 ./unicode_test.py: text/plain; charset=utf-8
 ```
 
