@@ -1,7 +1,7 @@
 ---
 title: Python? Unicode? UTF-8?
 date: 2019-04-18 22:00:00
-tags: Python, Unicode, UTF-8, ASCII
+tags: Python Unicode UTF-8 ASCII
 ---
 
 一直以来Python的Unicode问题我就没有彻底弄明白，这次趁着工作上的机会，将这个问题彻底梳理一下。
