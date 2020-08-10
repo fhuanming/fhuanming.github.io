@@ -4,7 +4,7 @@ date: 2020-08-08 16:00:00
 tags: Network, IP, MAC
 ---
 
-最近在想问题“IP与MAC的作用”，以及很早之前学过的网络知识。发现了一个非常好的网站 Practical Networking ([www.practicalnetworking.net/series](www.practicalnetworking.net/series))，所以记录一下这个网站以及我所学到的知识.
+最近在想问题“IP与MAC的作用”，以及很早之前学过的网络知识。发现了一个非常好的网站 Practical Networking ([www.practicalnetworking.net/series](https://www.practicalnetworking.net/series))，所以记录一下这个网站以及我所学到的知识.
 
 <!-- more -->
 
