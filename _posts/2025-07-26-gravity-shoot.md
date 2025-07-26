@@ -1,12 +1,8 @@
 ---
-title: Gravity Shoot
+title: Gravity Shoot - Physics Game for Apple Watch
 date: 2025-07-26 16:00:00
 tags: Apple
 ---
-
-# Gravity Shoot - Physics Game for Apple Watch
-
-## App Store Description
 
 **Master precision shooting on your wrist—Twist the Digital Crown to bend gravity and guide your shot. One twist, one chance, endless satisfaction. Are you ready to defy the impossible?**
 
