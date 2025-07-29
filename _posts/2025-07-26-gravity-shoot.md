@@ -1,5 +1,5 @@
 ---
-title: Gravity Shoot - Physics Game for Apple Watch
+title: Gravity Shoot - Physics shooting Game on wrist
 date: 2025-07-26 16:00:00
 tags: Apple
 ---
@@ -23,7 +23,6 @@ Gravity Shoot is a unique gravity-controlled shooting game that puts your physic
 - 🧠 Showing off your physics skills to friends
 - 🏆 Beating your personal best (and bragging about it)
 - 😌 Stress relief with satisfying, tactile gameplay
-- ⌚ Making the most of your Apple Watch's unique capabilities
 
 
 **✨ FEATURES**
@@ -34,10 +33,6 @@ Gravity Shoot is a unique gravity-controlled shooting game that puts your physic
 - **Offline Play**: No internet connection required
 - **Privacy Focused**: No data collection, completely private
 
-**📱 COMPATIBILITY**
-- Requires Apple Watch Series 4 or later, Apple Watch SE and Apple Watch Ultra.
-- watchOS 8.0 or later
-- Optimized for all Apple Watch screen sizes
 
 **🔒 PRIVACY**
 Your privacy matters to us. Gravity Shoot operates completely offline and does not collect any personal data. All game progress is stored locally on your device.
@@ -48,4 +43,4 @@ Experience the thrill of precision shooting on your wrist! Perfect for gamers wh
 ---
 
 **Keywords for App Store:**
-gravity, shooting, physics game, precision, digital crown, apple watch game, casual game, puzzle game, physics puzzle, wrist game 
+gravity, shooting, physics game, precision, digital crown, casual game, wrist game
